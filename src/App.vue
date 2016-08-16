@@ -1,18 +1,13 @@
 <template>
-  <div>
-    <ul>
-      <li><a v-link="{name: 'home'}">home</a></li>
-      <li><a v-link="{name: 'user'}">user</a></li>
-    </ul>
-  </div>
   <div id="app">
     <router-view></router-view>
   </div>
-
 </template>
 
 <script>
+  import store from './vuex/store';
   export default {
+    store:store
   };
 </script>
 

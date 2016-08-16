@@ -1,19 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
-@modulemax
-Watch 13
-Unstar 114
-Fork 43 lazyhero/vue-spa-demo
-Code  Issues 4  Pull requests 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathvue-spa-demo/src/views/home.vue
-72a8bc2  on 28 Oct 2015
-@lazyhero lazyhero add v-model,v-for,v-bind
-1 contributor
-RawBlameHistory     62 lines (57 sloc)  2.35 KB
+
 <style>
   .body {
     background: #fff;

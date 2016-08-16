@@ -6,16 +6,36 @@
 </style>
 
 <template>
-  <h1>user</h1>
+  <div>
+    <ul>
+      <li><a v-link="{name: 'home'}">home</a></li>
+      <li><a v-link="{name: 'user'}">user</a></li>
+    </ul>
+  </div>
+  <h1>user11</h1>
+  {{count}}
+  <button v-on:click="increment()">fetchName</button>
+
+  {{name}}
+  <button v-on:click="addname">fetchName</button>
 </template>
 
+
 <script>
+
+  import { getName ,getCount} from '../vuex/getters';
+  import { incrementCounter ,fetchname} from '../vuex/actions';
+
   module.exports = {
-    data: function(){
-      return {
+    vuex: {
+      getters: {
+        name: getName,
+        count:getCount
+      },
+      actions: {
+        increment: incrementCounter,
+        addname:fetchname
       }
-    },
-    ready: function () {
     }
   }
 </script>
