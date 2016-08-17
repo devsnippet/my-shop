@@ -6,18 +6,10 @@
 </style>
 
 <template>
-  <div>
-    <ul>
-      <li><a v-link="{name: 'home'}">home</a></li>
-      <li><a v-link="{name: 'user'}">user</a></li>
-    </ul>
-  </div>
-  <h1>user11</h1>
-  {{count}}
-  <button v-on:click="increment()">fetchName</button>
 
-  {{name}}
-  <button v-on:click="addname">fetchName</button>
+  <h1>user</h1>
+
+
 </template>
 
 
@@ -25,8 +17,12 @@
 
   import { getName ,getCount} from '../vuex/getters';
   import { incrementCounter ,fetchname} from '../vuex/actions';
+  import bottomTabBar from '../components/bottomTabBar.vue';
 
   module.exports = {
+    components:{
+      'bottom-tab-bar':bottomTabBar
+    },
     vuex: {
       getters: {
         name: getName,
@@ -35,6 +31,10 @@
       actions: {
         increment: incrementCounter,
         addname:fetchname
+      }
+    },
+    route: {
+      data: function (transition) {
       }
     }
   }
