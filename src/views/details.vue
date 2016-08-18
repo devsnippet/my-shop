@@ -9,7 +9,7 @@
 
   <h1>details</h1>
 
-
+<bottom-tab-bar></bottom-tab-bar>
 </template>
 
 

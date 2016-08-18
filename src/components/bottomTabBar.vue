@@ -2,19 +2,19 @@
 <template>
   <div>
     <tabbar>
-      <tabbar-item v-link="{name: 'home'}">
+      <tabbar-item v-link="{name: 'home',activeClass:'weui_bar_item_on'}">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_button.png">
         <span slot="label">home</span>
       </tabbar-item>
-      <tabbar-item v-link="{name: 'list'}">
+      <tabbar-item v-link="{name: 'list',activeClass:'weui_bar_item_on'}">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_msg.png">
         <span slot="label">list</span>
       </tabbar-item>
-      <tabbar-item v-link="{name: 'details'}">
+      <tabbar-item v-link="{name: 'details',activeClass:'weui_bar_item_on'}">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_article.png">
         <span slot="label">details</span>
       </tabbar-item>
-      <tabbar-item v-link="{name: 'user'}">
+      <tabbar-item v-link="{name: 'user',activeClass:'weui_bar_item_on'}"  v-bind:class="{'class-a':select}">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_cell.png">
         <span slot="label">uesr</span>
       </tabbar-item>
@@ -27,6 +27,9 @@
   import tabBarItem from 'vux/dist/components/tabbar-item';
 
   module.exports = {
+    data: {
+      select:true
+    },
     components: {
       'tabbar': tabBar,
       'tabbar-item': tabBarItem
@@ -36,7 +39,10 @@
 
 <style>
   @import '~vux/dist/vux.css';
-  .v-link-active{
+  .class-a{
     color: red;
+  }
+  .class-b{
+    color: #00f;
   }
 </style>

@@ -9,7 +9,7 @@
 
   <h1>user</h1>
 
-
+<bottom-tab-bar></bottom-tab-bar>
 </template>
 
 

@@ -9,12 +9,11 @@
 
   <h1>list</h1>
 
-
+  <bottom-tab-bar></bottom-tab-bar>
 </template>
 
 
 <script>
-
   import { getName ,getCount} from '../vuex/getters';
   import { incrementCounter ,fetchname} from '../vuex/actions';
   import bottomTabBar from '../components/bottomTabBar.vue';

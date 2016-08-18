@@ -1,4 +1,3 @@
-
 <style>
   .body {
     background: #fff;
@@ -8,9 +7,7 @@
 <template>
 
 <h1>home</h1>
-
-
-
+    <bottom-tab-bar></bottom-tab-bar>
 </template>
 
 

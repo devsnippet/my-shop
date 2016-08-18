@@ -45,6 +45,7 @@
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^0.8.3",
     "less":"latest",
-    "less-loader":"latest"
+    "less-loader":"latest",
+    "vue-cli":"latest"
   }
 }
