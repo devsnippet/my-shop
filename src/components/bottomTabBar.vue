@@ -1,48 +1,78 @@
-
 <template>
-  <div>
-    <tabbar>
-      <tabbar-item v-link="{name: 'home',activeClass:'weui_bar_item_on'}">
-        <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_button.png">
-        <span slot="label">home</span>
-      </tabbar-item>
-      <tabbar-item v-link="{name: 'list',activeClass:'weui_bar_item_on'}">
-        <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_msg.png">
-        <span slot="label">list</span>
-      </tabbar-item>
-      <tabbar-item v-link="{name: 'details',activeClass:'weui_bar_item_on'}">
-        <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_article.png">
-        <span slot="label">details</span>
-      </tabbar-item>
-      <tabbar-item v-link="{name: 'user',activeClass:'weui_bar_item_on'}"  v-bind:class="{'class-a':select}">
-        <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_cell.png">
-        <span slot="label">uesr</span>
-      </tabbar-item>
-    </tabbar>
+
+  <div class="weui_tabbar">
+    <a v-link="{name: 'home',activeClass:'weui_tabbar_item_active'}" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon"><img  src="https://unsplash.it/200/300/?random" alt="home"></div>
+      <p class="weui_tabbar_label"><span>home</span></p>
+    </a>
+    <a v-link="{name: 'list',activeClass:'weui_tabbar_item_active'}" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon vux-reddot"> <img src="https://unsplash.it/200/300/?random" alt="list"> </div>
+      <p class="weui_tabbar_label"> <span>list</span> </p>
+    </a>
+    <a v-link="{name: 'details',activeClass:'weui_tabbar_item_active'}" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon"> <img  src="https://unsplash.it/200/300/?random" alt="detal"> </div>
+      <p class="weui_tabbar_label"> <span>details</span> </p>
+    </a>
+    <a v-link="{name: 'user',activeClass:'weui_tabbar_item_active'}" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon"> <img src="https://unsplash.it/200/300/?random" alt="user"> </div>
+      <p class="weui_tabbar_label"> <span>user</span> </p>
+    </a>
   </div>
+
 </template>
 
 <script>
-  import tabBar from 'vux/dist/components/tabbar';
-  import tabBarItem from 'vux/dist/components/tabbar-item';
 
   module.exports = {
-    data: {
-      select:true
-    },
-    components: {
-      'tabbar': tabBar,
-      'tabbar-item': tabBarItem
-    }
+
   }
 </script>
 
 <style>
-  @import '~vux/dist/vux.css';
-  .class-a{
-    color: red;
+  .weui_tabbar {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f6f3f7;
+    border-top: 1px solid #d0d0d0;
   }
-  .class-b{
-    color: #00f;
+  .weui_tabbar a{
+    text-decoration: none;
+  }
+  .weui_tabbar_item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 7px 0 0;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0.7;
+  }
+
+  .weui_tabbar_icon {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+  }
+
+  .weui_tabbar_label {
+    margin: 3px 0 0;
+    text-align: center;
+    color: #221e12;
+    font-size: 12px;
+  }
+
+  .weui_tabbar_icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .weui_tabbar_item_active {
+    opacity: 1;
   }
 </style>
