@@ -14,7 +14,8 @@
     "babel-runtime": "^6.0.0",
     "vue-router":"^0.7.13",
     "vuex":"latest",
-    "vux":"latest"
+    "vux":"latest",
+    "vue-lazyload":"latest"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

@@ -1,6 +1,6 @@
 <template>
   <div id="my-tab">
-    <tab active-color="#221e12" default-color="#999999" class="my-tab">
+    <tab active-color="#221e12" default-color="#aaaaaa" class="my-tab">
         <tab-item :selected="demo1 === '首页'" @click="demo1 = '首页'" class="my-tab-item">首页</tab-item>
         <tab-item :selected="demo1 === '今日新品'" @click="demo1 = '今日新品'" class="my-tab-item">今日新品</tab-item>
         <tab-item :selected="demo1 === '活动特价'" @click="demo1 = '活动特价'" class="my-tab-item">活动特价</tab-item>
@@ -11,16 +11,23 @@
   <div id="my-banner">
     <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
   </div>
+  <div>
+    <product-item url="https://unsplash.it/350/200/?random" title="你是一个伤感" intro="好打hi爱好上帝和赛后的" price="1212"></product-item>
+  </div>
+  <div style="height:10rem">
+      到底了
+  </div>
   <bottom-tab-bar></bottom-tab-bar>
 </template>
 
 
 <script>
 
-  import bottomTabBar from '../components/bottomTabBar.vue';
   import tab from 'vux/dist/components/tab';
   import tabItem from 'vux/dist/components/tab-item';
   import swiper from 'vux/dist/components/swiper';
+  import bottomTabBar from '../components/bottomTabBar.vue';
+  import productItem from '../components/productItem.vue'
 
 
   module.exports = {
@@ -48,6 +55,7 @@
       'tab':tab,
       'tab-item':tabItem,
       'swiper':swiper,
+      'product-item':productItem
     },
   }
 </script>
@@ -55,15 +63,16 @@
 <style>
   @import '~vux/dist/vux.css';
   #my-tab {
+    padding: 0.4rem 0 0.7rem;
+    background-color: #fdfdfd;
   }
   #my-tab .my-tab{
     height:auto;
-    background-color: #fdfdfd;
   }
   #my-tab .my-tab .my-tab-item{
-    line-height: 4.5rem;
+    line-height: 4rem;
     font-size: 2rem;
-
+    background: none;
   }
   #my-banner{
     margin-top: 0px;
