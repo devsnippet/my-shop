@@ -49,20 +49,20 @@
     flex: 1;
     padding: 1rem 0 0;
     -webkit-tap-highlight-color: transparent;
-    opacity: 0.7;
+    opacity: 0.6;
   }
 
   .weui_tabbar_icon {
     margin: 0 auto;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .weui_tabbar_label {
     margin: 0.5rem 0 0;
     text-align: center;
     color: #221e12;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .weui_tabbar_icon img {
