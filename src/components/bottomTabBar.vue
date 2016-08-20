@@ -22,7 +22,6 @@
 </template>
 
 <script>
-
   module.exports = {
 
   }
@@ -48,22 +47,22 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 7px 0 0;
+    padding: 1rem 0 0;
     -webkit-tap-highlight-color: transparent;
     opacity: 0.7;
   }
 
   .weui_tabbar_icon {
     margin: 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .weui_tabbar_label {
-    margin: 3px 0 0;
+    margin: 0.5rem 0 0;
     text-align: center;
     color: #221e12;
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 
   .weui_tabbar_icon img {

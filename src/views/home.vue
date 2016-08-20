@@ -61,8 +61,8 @@
     background-color: #fdfdfd;
   }
   #my-tab .my-tab .my-tab-item{
-    line-height: 32px;
-    font-size: 12px;
+    line-height: 4rem;
+    font-size: 1.5rem;
 
   }
   #my-banner{
