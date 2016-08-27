@@ -8,7 +8,7 @@ export default (router) => {
       name: 'list',
       component: require('./views/list'),
     },
-    '/details': {
+    '/details/:productid': {
       name: 'details',
       component: require('./views/details'),
     },
@@ -26,4 +26,3 @@ export default (router) => {
     transition.next();
   });
 };
-

@@ -12,10 +12,15 @@
     <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
   </div>
   <div>
-    <product-item url="https://unsplash.it/350/200/?random" title="你是一个伤感" intro="好打hi爱好上帝和赛后的" price="1212"></product-item>
+    <product-item1 productid="0" imgurl="https://unsplash.it/350/200/?random" title="你是一个伤感" intro="好打hi爱好上帝和赛后的" price="1212" orig="1355"></product-item0>
+  </div>
+  <div>
+    <product-item0 productid="0" imgurl="https://unsplash.it/350/200/?random" title="你是一个伤感" intro="好打hi爱好上帝和赛后的" price="1212" orig="1355"></product-item0>
+  </div>
+  <div>
+    <product-item productid="0" imgurl="https://unsplash.it/350/200/?random" title="你是一个伤感" intro="好打hi爱好上帝和赛后的" price="1212"></product-item>
   </div>
   <div style="height:10rem">
-      到底了
   </div>
   <bottom-tab-bar></bottom-tab-bar>
 </template>
@@ -28,6 +33,8 @@
   import swiper from 'vux/dist/components/swiper';
   import bottomTabBar from '../components/bottomTabBar.vue';
   import productItem from '../components/productItem.vue'
+  import productItem0 from '../components/productItem0.vue'
+  import productItem1 from '../components/productItem1.vue'
 
 
   module.exports = {
@@ -55,7 +62,9 @@
       'tab':tab,
       'tab-item':tabItem,
       'swiper':swiper,
-      'product-item':productItem
+      'product-item':productItem,
+      'product-item0':productItem0,
+      'product-item1':productItem1
     },
   }
 </script>
@@ -63,7 +72,7 @@
 <style>
   @import '~vux/dist/vux.css';
   #my-tab {
-    padding: 0.4rem 0 0.7rem;
+    padding: 0.4rem 0 0rem;
     background-color: #fdfdfd;
   }
   #my-tab .my-tab{

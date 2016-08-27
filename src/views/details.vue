@@ -1,27 +1,40 @@
 
 <style>
-  .body {
-    background: #fff;
-  }
+
 </style>
 
 <template>
-
-  <h1>details</h1>
-
-<bottom-tab-bar></bottom-tab-bar>
+{{message}}
+{{$loadingRouteData}}
+<div v-if="!loaded">
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
 </template>
 
 
 <script>
 
-  import { getName ,getCount} from '../vuex/getters';
-  import { incrementCounter ,fetchname} from '../vuex/actions';
-  import bottomTabBar from '../components/bottomTabBar.vue';
-
   module.exports = {
-    components:{
-      'bottom-tab-bar':bottomTabBar
+    data(){
+      return {
+        product:null,
+        loaded:false
+      }
     },
+    components:{
+
+    },
+    route:{
+      data: function (transition) {
+       setTimeout(function () {
+         alert(JSON.stringify(transition.to.params));
+         transition.next({
+           product: transition.to.params.productid
+           ,loaded:true
+         })
+       }, 1000)
+     }
+    }
+
   }
 </script>

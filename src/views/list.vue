@@ -8,7 +8,7 @@
 <template>
 
   <h1>list</h1>
-
+  <img src="../assets/logo.png"/>
   <bottom-tab-bar></bottom-tab-bar>
 </template>
 
