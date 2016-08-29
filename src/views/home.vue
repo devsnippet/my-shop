@@ -70,7 +70,6 @@
 </script>
 
 <style>
-  @import '~vux/dist/vux.css';
   #my-tab {
     padding: 0.4rem 0 0rem;
     background-color: #fdfdfd;

@@ -16,4 +16,5 @@
 
 <style>
   @import "../src/assets/style/main.css";
+  @import '~vux/dist/vux.css';
 </style>
