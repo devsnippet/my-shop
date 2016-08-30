@@ -45,6 +45,7 @@
 }
 
 .product-meta h1 {
+    margin-top: 1rem;
     text-indent: 1.5rem;
 }
 
@@ -81,6 +82,47 @@
     font-size: 1.8rem;
 }
 
+.shoppingcar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    overflow: hidden;
+    border-top: 1px solid #333;
+}
+
+.shoppingcar .car-box {
+    float: left;
+    width: 30%;
+    line-height: 7rem;
+    text-align: center;
+}
+
+.shoppingcar .car-box img {
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+    padding: 1rem 6rem;
+    border: 1px solid #333;
+    border-radius: 0.3rem;
+}
+
+.shoppingcar .submit-box {
+    width: 70%;
+    float: right;
+    text-align: center;
+    line-height: 5rem;
+}
+.shoppingcar .submit-box p {
+    vertical-align: middle;
+    background-color: #f77;
+    margin: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
 </style>
 
 <template>
@@ -115,8 +157,12 @@
             每天精选100+品牌授权特卖，100%正品保证，限时特卖!商品囊括时尚服饰，美妆，居家，母婴
         </h1>
     </div>
+    <div class="">促销
+        <p></p>
+    </div>
     <div class="comments">评价</div>
     <div class="service">
+        <p>服务</p>
         <ul>
             <li>
                 <img src="../assets/img/tick.png" /><span>7天包退</span>
@@ -132,11 +178,18 @@
             </li>
         </ul>
     </div>
-    <div>图文</div>
-    <div>推荐</div>
-    <div class="">促销</div>
-    <div>规格</div>
+    <div class="">
 
+    </div>
+    <div>推荐</div>
+    <div class="shoppingcar">
+        <div class="car-box">
+            <img src="../assets/img/shopcar.png" />
+        </div>
+        <div class="submit-box">
+            <p>加入购物车</p>
+        </div>
+    </div>
 </div>
 
 </template>
