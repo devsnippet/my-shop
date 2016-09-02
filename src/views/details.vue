@@ -15,11 +15,11 @@
 }
 
 .product-meta .sale-price span {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .product-meta .market-price {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #999;
     padding: 0 0.5rem;
 }
@@ -47,7 +47,7 @@
 .product-meta h1 {
     font-size: 0.84rem;
     margin-top: 0.5rem;
-    text-indent: 1rem;
+    text-indent: 2rem;
     font-weight: normal;
 }
 
@@ -65,7 +65,7 @@
 .service ul {
     overflow: hidden;
     list-style: none;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
 }
 
 .service ul li {
@@ -120,41 +120,47 @@
     background-color: #f77;
     text-align: center;
     height: 100%;
-    border-radius:0.2rem;
+    border-radius: 0.2rem;
 }
 
 .shoppingcar .submit-box span {
     vertical-align: middle;
     text-align: center;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .product-attr {
     margin: 0.5rem 0;
+    padding: 1rem;
     background-color: #fff;
 }
 
 .product-attr h3 {}
 
 .product-attr .point-describe {
-    font-size: 0.6rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
+    text-indent: 2rem;
 }
 
 .product-attr table {
+  border-top: 1px solid #eee;
     margin-top: 0.5rem;
-    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .product-img {
     background-color: #fff;
     margin-top: 0.5rem;
 }
-
+.product-img h3{
+  text-align: left;
+  margin:0.7rem 0;
+}
 .product-tips {
-  margin-top: 0.5rem;
-  background-color: #fff;
+    margin-top: 0.5rem;
+    background-color: #fff;
 }
 
 .product-tips ul {
@@ -164,6 +170,7 @@
 .product-tips ul li {
     line-height: 2rem;
     padding: 0.1rem 2rem;
+    border-top: 1px solid #eee;
 }
 
 .product-tips .tips-type {
@@ -185,7 +192,6 @@
     word-break: keep-all;
     text-overflow: ellipsis;
     vertical-align: middle;
-
 }
 
 </style>
@@ -195,7 +201,7 @@
 <div>
     <div class="product-swiper">
         <div onclick="history.go(-1);" style="background-color:#000;opacity:0.4;height:1.5rem;width:1.5rem;margin:0.5em;padding:0.5em;position:absolute;top: 0;left:0;z-index:9999;border-radius:100%;
-        background-image:url('/static/img/back.png');background-size: cover;">11
+        background-image:url('/static/img/back.png');background-size: cover;">
         </div>
 
         <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
@@ -221,6 +227,7 @@
         <h1>
             每天精选100+品牌授权特卖，100%正品保证，限时特卖!商品囊括时尚服饰，美妆，居家，母婴
         </h1>
+
     </div>
     <div class="product-tips">促销
         <ul>
@@ -239,7 +246,6 @@
         </ul>
     </div>
     <div class="service">
-        <p>服务</p>
         <ul>
             <li>
                 <img src="../assets/img/tick.png" /><span>7天包退</span>
@@ -316,7 +322,7 @@
         <img v-lazy="imgurl">
     </div>
     <div>推荐</div>
-    <div style="height:3rem;"></div>
+    <div style="height:5rem;"></div>
     <div class="shoppingcar">
         <div class="car-box">
             <img src="../assets/img/shopcar.png" />
