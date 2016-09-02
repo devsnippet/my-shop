@@ -65,6 +65,7 @@
 .service ul {
     overflow: hidden;
     list-style: none;
+    margin-left: 2rem;
 }
 
 .service ul li {
@@ -89,9 +90,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: #fff;
-    height: 2.8rem;
+    height: 3rem;
     line-height: 2.5rem;
     border-top: 1px solid #999;
 }
@@ -101,6 +102,7 @@
     float: left;
     height: 100%;
     border: 1px solid #aaa;
+    border-radius: 0.1rem;
     width: 29%;
 }
 
@@ -114,17 +116,17 @@
 .shoppingcar .submit-box {
     position: relative;
     float: right;
-    height: 100%;
     width: 69%;
+    background-color: #f77;
+    text-align: center;
+    height: 100%;
+    border-radius:0.2rem;
 }
 
-.shoppingcar .submit-box p {
+.shoppingcar .submit-box span {
     vertical-align: middle;
-    background-color: #f77;
-    border-radius: 0.1rem;
     text-align: center;
     color: #fff;
-    height: 100%;
     font-size: 1.3rem;
 }
 
@@ -142,6 +144,7 @@
 
 .product-attr table {
     margin-top: 0.5rem;
+    padding: 1rem;
 }
 
 .product-img {
@@ -151,7 +154,7 @@
 
 .product-tips {
   margin-top: 0.5rem;
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .product-tips ul {
@@ -160,7 +163,7 @@
 
 .product-tips ul li {
     line-height: 2rem;
-    padding: 0.1rem 1rem;
+    padding: 0.1rem 2rem;
 }
 
 .product-tips .tips-type {
@@ -182,6 +185,7 @@
     word-break: keep-all;
     text-overflow: ellipsis;
     vertical-align: middle;
+
 }
 
 </style>
@@ -189,13 +193,13 @@
 <template>
 
 <div>
-    <div>
-        <div onclick="history.go(-1);" style="background-color:#000;opacity: 0.4;margin:1em;padding:0.5em;position:absolute;top: 0;left:0;z-index:100;border-radius:100%;">
-            <img src="../assets/img/back.png" alt="<" style="height:1.5rem;width:1.5rem;"></img>
+    <div class="product-swiper">
+        <div onclick="history.go(-1);" style="background-color:#000;opacity:0.4;height:1.5rem;width:1.5rem;margin:0.5em;padding:0.5em;position:absolute;top: 0;left:0;z-index:9999;border-radius:100%;
+        background-image:url('/static/img/back.png');background-size: cover;">11
         </div>
-        <div>
-            <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
-        </div>
+
+        <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
+
     </div>
     <div class="product-meta">
         <div>
@@ -318,7 +322,7 @@
             <img src="../assets/img/shopcar.png" />
         </div>
         <div class="submit-box">
-            <p>加入购物车</p>
+            <span>加入购物车</span>
         </div>
     </div>
 </div>
