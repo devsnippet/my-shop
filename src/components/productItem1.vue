@@ -49,12 +49,12 @@ module.exports = {
     overflow: hidden;
     text-align: center;
     float: left;
-    padding: 2rem 0 1rem;
+    padding: 1rem 0 0.5rem;
   }
   .product-wrap-1 .product-info{
     float: right;
     width: 50%;
-    padding: 1rem 3% 1rem;
+    padding: 0.5rem 3% 0.5rem;
     overflow: hidden;
   }
   .product-wrap-1 .product-img img[lazy=loading] {
@@ -72,42 +72,42 @@ module.exports = {
   }
   .product-wrap-1 .product-title{
     color: #221e12;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .product-wrap-1 .product-title .intro-1{
       display: block;
       color: #666;
-      font-size: 2.3rem;
+      font-size: 1rem;
       font-weight: 300;
   }
   .product-wrap-1 .product-subTitle{
     overflow: hidden;
   }
   .product-wrap-1 .product-subTitle .price-1{
-    font-size: 2.3rem;
+    font-size: 1rem;
     color: red;
     font-weight: 200;
   }
   .product-wrap-1 .product-subTitle del{
     color: #777;
-    font-size: 2.5rem;
+    font-size: 0.8rem;
     font-weight: 300;
   }
   .product-wrap-1 .product-addcar{
       text-align: right;
-      padding-right: 2rem;
+      padding-right: 1rem;
   }
   .product-wrap-1 .product-addcar span{
     color: #fff;
     background-color: red;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .product-wrap-1 .product-label{
-
+      display: none;
   }
   .product-wrap-1 .product-label span{
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #aaa;
   }
 

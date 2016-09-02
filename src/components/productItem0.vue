@@ -70,30 +70,30 @@ module.exports = {
     overflow: hidden;
   }
   .product-subTitle .intro{
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     color: #888;
     font-weight: 200;
     float: left;
   }
   .product-price{
     color: red;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
   }
   .product-price .label{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     background-color: red;
     padding: 0.5rem;
   }
   .product-price .price{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 300;
     margin-left: 1rem;
   }
   .product-price del{
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-left: 0.5rem;
   }
@@ -107,9 +107,9 @@ module.exports = {
   }
   .product-label p span{
     float:right;
-    font-size:4rem;
+    font-size:2rem;
     color: red;
-    margin-right: 2rem;
+    margin-right: 1rem;
     background-color: red;
     color: #fff;
     padding: 0.8rem;

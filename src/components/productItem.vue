@@ -54,21 +54,21 @@ module.exports = {
   }
   .product-title{
     color: #221e12;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .product-subTitle{
     overflow: hidden;
   }
   .product-subTitle .intro{
-    font-size: 2.3rem;
+    font-size: 1rem;
     color: #888;
     font-weight: 200;
     float: left;
   }
   .product-subTitle .price{
     color: #ff3939;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 300;
     float: right;
   }

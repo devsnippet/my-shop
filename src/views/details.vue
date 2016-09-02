@@ -1,7 +1,7 @@
 <style>
 
 .product-meta {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     background-color: #fff;
     position: relative;
 }
@@ -11,15 +11,15 @@
 }
 
 .product-meta .sale-price i {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .product-meta .sale-price span {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .product-meta .market-price {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #999;
     padding: 0 0.5rem;
 }
@@ -29,7 +29,7 @@
     border: 1px solid #f79;
     padding: 0 0.5rem;
     color: #f79;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .product-meta .collect {
@@ -38,25 +38,27 @@
 }
 
 .product-meta .collect img {
-    height: 3rem;
-    width: 3rem;
-    margin-top: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.5rem;
     bottom: 0;
 }
 
 .product-meta h1 {
-    margin-top: 1rem;
-    text-indent: 1.5rem;
+    font-size: 0.84rem;
+    margin-top: 0.5rem;
+    text-indent: 1rem;
+    font-weight: normal;
 }
 
 .comments {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     background-color: #fff;
     height: 7rem;
 }
 
 .service {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     background-color: #fff;
 }
 
@@ -67,19 +69,19 @@
 
 .service ul li {
     float: left;
-    line-height: 6rem;
-    margin-left: 2rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
 }
 
 .service ul li img {
     vertical-align: middle;
-    width: 2rem
+    width: 1rem
 }
 
 .service ul li span {
     margin-left: 0.2rem;
     vertical-align: middle;
-    font-size: 1.8rem;
+    font-size: 1rem;
 }
 
 .shoppingcar {
@@ -87,40 +89,99 @@
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 0.5rem 1rem;
     background-color: #fff;
-    overflow: hidden;
-    border-top: 1px solid #333;
+    height: 2.8rem;
+    line-height: 2.5rem;
+    border-top: 1px solid #999;
 }
 
 .shoppingcar .car-box {
+    position: relative;
     float: left;
-    width: 30%;
-    line-height: 7rem;
-    text-align: center;
+    height: 100%;
+    border: 1px solid #aaa;
+    width: 29%;
 }
 
 .shoppingcar .car-box img {
-    height: 3rem;
-    width: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 40%;
     vertical-align: middle;
-    padding: 1rem 6rem;
-    border: 1px solid #333;
-    border-radius: 0.3rem;
 }
 
 .shoppingcar .submit-box {
-    width: 70%;
+    position: relative;
     float: right;
-    text-align: center;
-    line-height: 5rem;
+    height: 100%;
+    width: 69%;
 }
+
 .shoppingcar .submit-box p {
     vertical-align: middle;
     background-color: #f77;
-    margin: 1rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.1rem;
+    text-align: center;
     color: #fff;
-    font-size: 2.5rem;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+.product-attr {
+    margin: 0.5rem 0;
+    background-color: #fff;
+}
+
+.product-attr h3 {}
+
+.product-attr .point-describe {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.product-attr table {
+    margin-top: 0.5rem;
+}
+
+.product-img {
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+
+.product-tips {
+  margin-top: 0.5rem;
+    background-color: #fff;
+}
+
+.product-tips ul {
+    list-style: none;
+}
+
+.product-tips ul li {
+    line-height: 2rem;
+    padding: 0.1rem 1rem;
+}
+
+.product-tips .tips-type {
+    text-align: center;
+    border: 1px solid #5682c1;
+    color: #5682c1;
+    padding: 0.1rem 0.8rem;
+    font-size: 0.3rem;
+    border-radius: .05333rem;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+}
+
+.product-tips .tips-datail {
+    font-size: 1.3rem;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    vertical-align: middle;
 }
 
 </style>
@@ -129,8 +190,8 @@
 
 <div>
     <div>
-        <div onclick="history.go(-1);" style="background-color:#000;opacity: 0.4;width:5em;margin:1em;padding:0.5em;position:absolute;top: 0;left:0;z-index:100;border-radius:100%;">
-            <img src="../assets/img/back.png" alt="<" style="width:100%;"></img>
+        <div onclick="history.go(-1);" style="background-color:#000;opacity: 0.4;margin:1em;padding:0.5em;position:absolute;top: 0;left:0;z-index:100;border-radius:100%;">
+            <img src="../assets/img/back.png" alt="<" style="height:1.5rem;width:1.5rem;"></img>
         </div>
         <div>
             <swiper :list="list" auto :aspect-ratio="aspectRatio"></swiper>
@@ -157,10 +218,22 @@
             每天精选100+品牌授权特卖，100%正品保证，限时特卖!商品囊括时尚服饰，美妆，居家，母婴
         </h1>
     </div>
-    <div class="">促销
-        <p></p>
+    <div class="product-tips">促销
+        <ul>
+            <li>
+                <span class="tips-type">包邮</span>
+                <p class="tips-datail">该商品免邮费</p>
+            </li>
+            <li>
+                <span class="tips-type">包邮</span>
+                <p class="tips-datail">该商品免邮费</p>
+            </li>
+            <li>
+                <span class="tips-type">包邮</span>
+                <p class="tips-datail">该商品免邮费</p>
+            </li>
+        </ul>
     </div>
-    <div class="comments">评价</div>
     <div class="service">
         <p>服务</p>
         <ul>
@@ -178,10 +251,68 @@
             </li>
         </ul>
     </div>
-    <div class="">
+    <div class="comments">评价</div>
+    <div class="product-attr">
 
+        <h3 id="J-pro-param-scroll">商品信息</h3>
+
+        <div class="point-describe">炙手可热的明星面膜，你美你先抢！含清洁因子吸黑面膜贴，吸附毛孔垃圾，改善肌肤外油内干、缺水、粗糙松弛等状态。补水又锁水，回复肌肤细腻饱满状态，嫩弹可人！一见，怦然心动！</div>
+
+        <table>
+            <tbody>
+                <tr class="product-attr-item">
+                    <td>品牌名称：</td>
+                    <td>御泥坊</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>商品名称：</td>
+                    <td>水动力清爽吸黑面膜套装 21片</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>产地：</td>
+                    <td>广东/上海/湖南</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>套装明细：</td>
+                    <td>清爽平衡矿物蚕丝面膜（黑面膜）21片</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>有效期：</td>
+                    <td>2019年（具体日期以收到实物为准）</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>规格：</td>
+                    <td>21片</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>特点描述：</td>
+                    <td>吸黑补水，保湿亮肤</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>适用肤质：</td>
+                    <td>所有肤质&nbsp;&nbsp;</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>适用对象/性别：</td>
+                    <td>所有人群&nbsp;&nbsp;</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>护肤功效：</td>
+                    <td>补水保湿&nbsp;&nbsp;</td>
+                </tr>
+                <tr class="product-attr-item">
+                    <td>类型：</td>
+                    <td>贴膜&nbsp;&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="product-img">
+        <h3>商品图片</h3>
+        <img v-lazy="imgurl">
     </div>
     <div>推荐</div>
+    <div style="height:3rem;"></div>
     <div class="shoppingcar">
         <div class="car-box">
             <img src="../assets/img/shopcar.png" />
@@ -203,6 +334,7 @@ module.exports = {
             return {
                 t: "<h1>ttt</h1>",
                 product: 0,
+                imgurl: "https://unsplash.it/300/1300/?random",
                 aspectRatio: 1,
                 list: [{
                     url: 'http://mp.weixin.qq.com/s?__biz=MzAxNjU0MDYxMg==&ampmid=400385458&ampidx=1&ampsn=78f6b8d99715384bdcc7746596d88359&ampscene=19#wechat_redirect',

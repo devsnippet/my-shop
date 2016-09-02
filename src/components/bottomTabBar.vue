@@ -47,22 +47,22 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 1rem 0 0;
+    padding: 0.5rem 0 0;
     -webkit-tap-highlight-color: transparent;
     opacity: 0.6;
   }
 
   .weui_tabbar_icon {
     margin: 0 auto;
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .weui_tabbar_label {
-    margin: 0.5rem 0 0;
+    margin: 0.3rem 0 0;
     text-align: center;
     color: #221e12;
-    font-size: 2rem;
+    font-size: 0.8rem;
   }
 
   .weui_tabbar_icon img {
