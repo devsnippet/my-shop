@@ -52,13 +52,13 @@
 }
 
 .comments {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     background-color: #fff;
     height: 7rem;
 }
 
 .service {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     background-color: #fff;
 }
 
@@ -101,8 +101,8 @@
     position: relative;
     float: left;
     height: 100%;
-    border: 1px solid #aaa;
-    border-radius: 0.1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
     width: 29%;
 }
 
@@ -139,14 +139,15 @@
 .product-attr h3 {}
 
 .product-attr .point-describe {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     text-indent: 2rem;
 }
 
 .product-attr table {
-  border-top: 1px solid #eee;
-    margin-top: 0.5rem;
+    border-top: 1px solid #aaa;
+    margin-top: 0.6rem;
+    padding-top: 0.7rem;
     font-size: 1.2rem;
 }
 
@@ -170,7 +171,6 @@
 .product-tips ul li {
     line-height: 2rem;
     padding: 0.1rem 2rem;
-    border-top: 1px solid #eee;
 }
 
 .product-tips .tips-type {
