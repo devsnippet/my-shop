@@ -101,7 +101,7 @@
     position: relative;
     float: left;
     height: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 0.2rem;
     width: 29%;
 }

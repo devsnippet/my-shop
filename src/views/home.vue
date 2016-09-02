@@ -1,5 +1,4 @@
 <style>
-
 #my-tab {
     padding: 0.4rem 0 0rem;
     background-color: #fdfdfd;
@@ -59,7 +58,6 @@ import bottomTabBar from '../components/bottomTabBar.vue';
 import productItem from '../components/productItem.vue'
 import productItem0 from '../components/productItem0.vue'
 import productItem1 from '../components/productItem1.vue'
-
 
 module.exports = {
     data: function() {

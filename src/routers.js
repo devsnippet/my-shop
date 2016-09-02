@@ -2,19 +2,27 @@ export default (router) => {
   router.map({
     '/home': {
       name: 'home',
-      component: require('./views/home'),
+      component:function (resolve) {
+          require(['./views/home'], resolve)
+      }
     },
     '/list': {
       name: 'list',
-      component: require('./views/list'),
+      component:function (resolve) {
+          require(['./views/list'], resolve)
+      }
     },
     '/details/:productid': {
       name: 'details',
-      component: require('./views/details'),
+      component:function (resolve) {
+          require(['./views/details'], resolve)
+      }
     },
     '/user': {
       name: 'user',
-      component: require('./views/user'),
+      component:function (resolve) {
+          require(['./views/user'], resolve)
+      }
     },
   });
   router.redirect({
