@@ -8,8 +8,8 @@
 }
 
 .user .center img {
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     border: 2px solid #ececec;
 }
@@ -21,7 +21,7 @@
 .order p {}
 
 .order ul {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     list-style: none;
     overflow: hidden;
 }
@@ -46,20 +46,20 @@
 .menus {}
 
 .weui_cells {
-    line-height: 2rem;
+    line-height: 3rem;
     margin-top: 0.3rem;
 }
 .weui_cell_hd{
   text-align: center;
 }
 .weui_cell_hd img {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
     text-align: center;
     vertical-align: middle;
 }
 .weui_cell_bd{
-  margin-left: 0.2rem;
+  margin-left: 0.3rem;
   font-size: 1.5rem;
 }
 .weui_cell_ft{
