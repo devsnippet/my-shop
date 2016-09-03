@@ -18,10 +18,12 @@
     background-color: #fff;
 }
 
-.order p {}
+.order>p {
+    padding: 1rem 0 0 1.2rem;
+}
 
 .order ul {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #d9d9d9;
     list-style: none;
     overflow: hidden;
 }
@@ -30,41 +32,49 @@
     float: left;
     width: 20%;
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
 }
-.order ul li img{
-    width: 1.3rem;
-    height: 1.3rem;
+
+.order ul li img {
+    width: 1.7rem;
+    height: 1.7rem;
     display: block;
     margin: 0 auto;
 }
-.order ul li p{
-  margin-top: 0.2rem;
+
+.order ul li p {
+    margin-top: 0.2rem;
     font-size: 0.8rem;
 }
+
 .menus {}
 
 .weui_cells {
     line-height: 3rem;
     margin-top: 0.3rem;
 }
-.weui_cell_hd{
-  text-align: center;
+
+.weui_cell_hd {
+    text-align: center;
 }
+
 .weui_cell_hd img {
     height: 1.5rem;
     width: 1.5rem;
     text-align: center;
     vertical-align: middle;
 }
-.weui_cell_bd{
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
+
+.weui_cell_bd {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
 }
-.weui_cell_ft{
-  font-size: 1.5rem;
+
+.weui_cell_ft {
+    font-size: 1.5rem;
 }
+
 .weui_cell_ft.with_arrow:after {
     height: 0.7rem;
     width: 0.7rem;
@@ -75,7 +85,7 @@
 <template>
 
 <div class="user">
-    <blur class="blurbg" height="11rem" :blur-amount=40 url="https://unsplash.it/150/150/?random">
+    <blur class="blurbg" :height="userhead" :blur-amount=40 url="https://unsplash.it/150/150/?random">
         <p class="center">
             <img src="https://unsplash.it/150/150/?random">
         </p>
@@ -145,25 +155,30 @@ import blur from 'vux/dist/components/blur'
 import group from 'vux/dist/components/group'
 import cell from 'vux/dist/components/cell'
 module.exports = {
-    components: {
-        'bottom-tab-bar': bottomTabBar,
-        'blur': blur,
-        'group': group,
-        'cell': cell
-    },
-    vuex: {
-        getters: {
-            name: getName,
-            count: getCount
+    data() {
+            return {
+                userhead:screen.availHeight*0.6
+            }
         },
-        actions: {
-            increment: incrementCounter,
-            addname: fetchname
+        components: {
+            'bottom-tab-bar': bottomTabBar,
+            'blur': blur,
+            'group': group,
+            'cell': cell
+        },
+        vuex: {
+            getters: {
+                name: getName,
+                count: getCount
+            },
+            actions: {
+                increment: incrementCounter,
+                addname: fetchname
+            }
+        },
+        route: {
+            data: function(transition) {}
         }
-    },
-    route: {
-        data: function(transition) {}
-    }
 }
 
 </script>
