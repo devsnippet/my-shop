@@ -51,7 +51,7 @@
 .menus {}
 
 .weui_cells {
-    line-height: 3rem;
+    line-height: 3.2rem;
     margin-top: 0.3rem;
 }
 
@@ -127,6 +127,11 @@
         <cell class="cell" title="常见问题" is-link link="#">
             <img class="icon" slot="icon" src="https://unsplash.it/50/50/?random"></img>
         </cell>
+    </group>
+    <group>
+        <cell class="cell" title="常见问题" is-link link="#">
+            <img class="icon" slot="icon" src="https://unsplash.it/50/50/?random"></img>
+        </cell>
         <cell class="cell" title="版本更新" is-link link="#">
             <img class="icon" slot="icon" src="https://unsplash.it/50/50/?random"></img>
         </cell>
@@ -157,7 +162,7 @@ import cell from 'vux/dist/components/cell'
 module.exports = {
     data() {
             return {
-                userhead:screen.availHeight*0.6
+                userhead:screen.availHeight*0.7
             }
         },
         components: {
