@@ -44,14 +44,14 @@
 
 .product-wrap-1 .product-title {
     color: #221e12;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
 .product-wrap-1 .product-title .intro-1 {
     display: block;
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .product-wrap-1 .product-subTitle .price-1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: red;
     font-weight: 200;
 }
@@ -79,7 +79,7 @@
 .product-wrap-1 .product-addcar span {
     color: #fff;
     background-color: red;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.3rem;
 }
 

@@ -34,7 +34,7 @@
 
 .product-title {
     color: #221e12;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .product-subTitle .intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #888;
     font-weight: 200;
     float: left;

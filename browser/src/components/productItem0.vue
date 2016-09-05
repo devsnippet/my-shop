@@ -34,7 +34,7 @@
 
 .product-title {
     color: #221e12;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .product-subTitle .intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #888;
     font-weight: 200;
     float: left;
@@ -51,7 +51,7 @@
 
 .product-price {
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -64,13 +64,13 @@
 }
 
 .product-price .price {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     margin-left: 1rem;
 }
 
 .product-price del {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-left: 0.5rem;
 }
@@ -87,7 +87,7 @@
 
 .product-label p span {
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: red;
     margin-right: 1rem;
     background-color: red;
