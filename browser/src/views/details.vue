@@ -45,7 +45,7 @@
 }
 
 .product-meta h1 {
-    font-size: 0.84rem;
+    font-size: 0.95rem;
     margin-top: 0.5rem;
     text-indent: 2rem;
     font-weight: normal;
@@ -109,8 +109,7 @@
 .shoppingcar .car-box img {
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 40%;
-    vertical-align: middle;
+    margin: 0 auto;
 }
 
 .shoppingcar .submit-box {
@@ -118,14 +117,11 @@
     float: right;
     width: 69%;
     background-color: #f77;
-    text-align: center;
     height: 100%;
     border-radius: 0.2rem;
 }
 
 .shoppingcar .submit-box span {
-    vertical-align: middle;
-    text-align: center;
     color: #fff;
     font-size: 1.6rem;
 }
@@ -139,7 +135,7 @@
 .product-attr h3 {}
 
 .product-attr .point-describe {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
     text-indent: 2rem;
 }
@@ -324,10 +320,10 @@
     <div>推荐</div>
     <div style="height:5rem;"></div>
     <div class="shoppingcar">
-        <div class="car-box">
+        <div class="car-box vux-center">
             <img src="../assets/img/shopcar.png" />
         </div>
-        <div class="submit-box">
+        <div class="submit-box vux-center">
             <span>加入购物车</span>
         </div>
     </div>
