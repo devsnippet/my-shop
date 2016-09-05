@@ -35,8 +35,8 @@
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #f6f3f7;
-    border-top: 1px solid #d0d0d0;
+    background-color: #fefafb;
+    border-top: 1px solid #eeeeee;
   }
   .weui_tabbar a{
     text-decoration: none;
