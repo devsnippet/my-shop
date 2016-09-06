@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html style="font-size:36px">
+<html style="font-size:30px">
 
 <head>
   <meta charset="utf-8">
   <title>my-vue</title>
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/stativ/favicon.ico" type="image/x-icon">  
+  <script>
+  //字体设置
+  (function (doc, win) {
+      var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              if(clientWidth>=1280){
+                  docEl.style.fontSize = '60px';
+              }else{
+                  docEl.style.fontSize = 30 * (clientWidth / 640) + 'px';
+              }
+          };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);
+  </script>
 </head>
 
 <body>
