@@ -1,11 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
+var sendSMS = require('../src/sendSMS');
 //登陆
 router.post('/login',function (req, res) {
 
@@ -14,6 +9,17 @@ router.post('/login',function (req, res) {
 //注册
 router.post('/signup',function (req, res) {
 
+});
+//注册
+router.get('/signup/:tel',function (req, res) {
+    var promise=sendSMS.forSignUp("11");
+    promise.then(function(value) {
+        // success
+        res.end("success"+req.params.tel);
+    }, function(value) {
+        // failure
+        res.end("failure");
+    });
 });
 
 module.exports = router;
