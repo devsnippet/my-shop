@@ -7,7 +7,7 @@
 }
 .user .center {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1rem;
     color: #fff;
     font-size: 1rem;
 }
@@ -17,18 +17,18 @@
     height: 5rem;
     border-radius: 50%;
     border: 2px solid #ececec;
+    vertical-align: middle;
 }
 
 .user .action{
-  line-height: 2rem;
-  margin-bottom: 1rem;
+  font-size:1rem;
 }
 
 .user .action .login{
-  color: #fff;
+  color: #f5f5f5;
 }
 .user .action .signup{
-  color: #fff;
+  color: #f5f5f5;
 }
 .user .action span{
   color: #fff;
@@ -41,11 +41,12 @@
 }
 
 .order>p {
-    padding: 1rem 0 0 1.2rem;
+    padding-top: 1rem;
+    margin: 0 1rem 0 1rem;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .order ul {
-    border-top: 1px solid #d9d9d9;
     list-style: none;
     overflow: hidden;
 }
@@ -197,7 +198,7 @@ import cell from 'vux/dist/components/cell'
 module.exports = {
     data() {
             return {
-                userhead:10*30 * (window.screanWidth / 640)
+                userhead:9*30 * (window.screanWidth / 640)
             }
         },
         components: {
