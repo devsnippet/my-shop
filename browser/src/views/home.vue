@@ -9,7 +9,7 @@
 }
 
 #my-tab .my-tab .my-tab-item {
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-size: 0.8rem;
     background: none;
 }
