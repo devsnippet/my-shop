@@ -27,7 +27,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .weui_tabbar {
     display: flex;
     position: fixed;
@@ -35,8 +35,8 @@
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #fefafb;
-    border-top: 1px solid #eeeeee;
+    background-color: #fefefe;
+    border-top: 1px solid #f0f0f0;
   }
   .weui_tabbar a{
     text-decoration: none;
@@ -47,23 +47,24 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 0.5rem 0 0;
+    padding: 0.2rem 0 0;
     -webkit-tap-highlight-color: transparent;
     opacity: 0.6;
   }
 
   .weui_tabbar_icon {
     margin: 0 auto;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
-  .weui_tabbar_label {
-    margin: 0.3rem 0 0;
+  .weui_tabbar_item .weui_tabbar_label {
     text-align: center;
     color: #221e12;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin-top: 0;
   }
+
 
   .weui_tabbar_icon img {
     display: block;

@@ -1,6 +1,6 @@
 <style>
 #my-tab {
-    padding: 0.4rem 0 0rem;
+    padding: 0.2rem 0 0rem;
     background-color: #fdfdfd;
 }
 
@@ -9,8 +9,8 @@
 }
 
 #my-tab .my-tab .my-tab-item {
-    line-height: 2rem;
-    font-size: 1rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
     background: none;
 }
 
