@@ -68,8 +68,8 @@
   margin-top: 0;
 }
 .input{
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 2.5rem;
 }
 .weui_icon{
   width: 2rem;
@@ -82,6 +82,9 @@
   text-align: center;
   background-color: #333;
   margin: 0.5rem 1rem;
+}
+#sendCode{
+  font-size: 1rem;
 }
 </style>
 
@@ -105,7 +108,7 @@
   <div class="from">
     <group class="group">
       <x-input class="input" :value.sync="tel" title="手机号" placeholder="" v-ref:input is-type="china-mobile" :show-clear="false"></x-input>
-      <x-input class="input" :value.sync="verifiedCode" title="验证码" placeholder="" v-ref:input :show-clear="false"><span>发送验证码</span></x-input>
+      <x-input class="input" :value.sync="verifiedCode" title="验证码" placeholder="" v-ref:input :show-clear="false"><span id="sendCode">发送验证码</span></x-input>
       <x-input class="input" :value.sync="password" title="密码" placeholder="" v-ref:input :show-clear="false"></x-input>
     </group>
     <p class="submit">注册</p>

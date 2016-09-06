@@ -33,7 +33,7 @@
 .user .action span{
   color: #fff;
   padding-bottom: 0.2rem;
-  margin: 0.4rem;
+  margin: 0.4rem 0.7rem;
 }
 
 .order {
