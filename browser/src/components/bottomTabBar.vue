@@ -54,8 +54,8 @@
 
   .weui_tabbar_icon {
     margin: 0 auto;
-    width: 1.33rem;
-    height: 1.33rem;
+    width: 1.35rem;
+    height: 1.35rem;
   }
 
   .weui_tabbar_item .weui_tabbar_label {

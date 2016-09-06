@@ -18,4 +18,22 @@ Vue.use(VueLazyload, {
   try: 3
 });
 
+//字体设置 将屏幕宽度保存在全局变量@screanWidth中，方便使用
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            window.screanWidth = docEl.clientWidth;
+            if (!window.screanWidth) return;
+            if(window.screanWidth>=1280){
+                docEl.style.fontSize = '60px';
+            }else{
+                docEl.style.fontSize = 30 * (window.screanWidth / 640) + 'px';
+            }
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+
 router.start(App, '#app');

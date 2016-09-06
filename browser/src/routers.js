@@ -24,6 +24,18 @@ export default (router) => {
           require(['./views/user'], resolve)
       }
     },
+    '/login': {
+      name: 'login',
+      component:function (resolve) {
+          require(['./views/login'], resolve)
+      }
+    },
+    '/signup': {
+      name: 'signup',
+      component:function (resolve) {
+          require(['./views/signup'], resolve)
+      }
+    },
   });
   router.redirect({
     // 重定向 /a 到 /b
