@@ -1,10 +1,5 @@
 <style scoped>
 .content{
-  position: fixed;
-  top:0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #fff;
 }
 .header{
@@ -42,7 +37,7 @@
   width: 12%;
   text-align: center;
   font-weight: 200;
-  color:#f3f3f3;
+  color:#e6e6e6;
 }
 .header .action .signup{
   float: left;
@@ -51,7 +46,7 @@
   color:#ffffff;
 }
 .header .action .signup a{
-  color:#ffffff;
+  color:#ddd;
 }
 .sanjiao{
   width: 1rem;

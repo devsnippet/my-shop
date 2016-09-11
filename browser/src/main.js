@@ -8,6 +8,7 @@ import { toprice } from './filters';
 
 Vue.filter('toprice',toprice);
 Vue.use(VueResource);
+//Vue.http.options.root = 'http://movielife.top:3000';
 Vue.use(VueRouter);
 const router = new VueRouter();
 configRouter(router);

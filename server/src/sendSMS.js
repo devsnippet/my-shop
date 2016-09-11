@@ -10,7 +10,7 @@ var sendSMS={
 function forSignUp(tel) {
     var promise=new Promise(function (resolve, reject) {
         setTimeout(function () {
-            resolve(1)
+            resolve(tel+';'+Date.now());
         },2000)
     });
     return promise;

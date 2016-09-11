@@ -12,20 +12,22 @@ router.post('/signup',function (req, res) {
 
 });
 //获取验证码
-router.get('/signup/:tel',function (req, res) {
-    var promise=sendSMS.forSignUp("11");
+ router.post('/verifyCode',function (req, res) {
+    var tel=req.body.tel;
+    console.log(req.cookies.verifyCode);
+    var promise=sendSMS.forSignUp(tel);
     promise.then(function(value) {
-        // success
-        var a=cryptoUtils.cipher('123456789');
+        var a=cryptoUtils.cipher(value);
         res.writeHead(200, {
-            'Set-Cookie': 'myCookie='+a,
+            'Set-Cookie': 'verifyCode='+a,
             'Content-Type': 'text/plain'
         });
-        res.end(cryptoUtils.deCipher());
+        res.end(tel);
     }, function(value) {
         // failure
-        res.end("failure");
+        res.end('errrrr');
     });
-});
+ });
+
 
 module.exports = router;
