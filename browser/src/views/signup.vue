@@ -116,12 +116,12 @@
     <div class="from">
         <group class="group">
             <x-input class="input" :value.sync="tel" title="手机号" placeholder="" v-ref:input is-type="china-mobile" :show-clear="true"></x-input>
-            <x-input class="input" :value.sync="verifiedCode0" title="验证码" equal-with="verifiedCode1" placeholder="" v-ref:input :show-clear="false">
-                <span id="sendCode" v-on:click="sendCode">{{countdown}}</span>
+            <x-input class="input" :value.sync="verifyCode" title="验证码"  placeholder="" v-ref:input :show-clear="false">
+                <span  id="sendCode" v-on:click="sendCode">{{countdown}}</span>
             </x-input>
-            <x-input class="input" :value.sync="password" title="密码" placeholder="" v-ref:input :show-clear="true"></x-input>
+            <x-input type="password" class="input" :value.sync="password" title="密码" placeholder="" v-ref:input :show-clear="true"></x-input>
         </group>
-        <p class="submit">注册</p>
+        <p class="submit" v-on:click="signup">注册</p>
     </div>
     <div class="agreement">
     </div>
@@ -150,8 +150,7 @@ module.exports = {
                 userhead: window.screanWidth * 0.61,
                 tel: '',
                 password: '',
-                verifiedCode0: '',
-                verifiedCode1: null,
+                verifyCode: '',
                 countdown: '发送验证码',
                 isCountdowning: false,
             }
@@ -168,9 +167,9 @@ module.exports = {
                 this.$http
                     .post('/user/verifyCode', data)
                     .then((response) => {
-                        alert('ok' + response.body + response.status);
+                        alert(response.body);
                     }, (response) => {
-                        alert('err' + response.body + response.status);
+                        alert(response.body);
                     });
             },
             startCountdown() {
@@ -185,6 +184,20 @@ module.exports = {
                     }
                 }, 1000);
             },
+            signup(){
+              let data = {
+                      tel: this.tel,
+                      verifyCode:this.verifyCode,
+                      password:this.password
+              };
+              this.$http
+                  .post('/user/signup', data)
+                  .then((response) => {
+                      alert(response.body);
+                  }, (response) => {
+                      alert(response.body);
+                  });
+            }
         },
         components: {
             'blur': blur,

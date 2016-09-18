@@ -7,7 +7,8 @@ var key='zhengrenkun';
 
 var cryptoUtils={
     cipher:cipher,
-    deCipher:deCipher
+    deCipher:deCipher,
+    toMD5:toMD5
 };
 //加密
 function cipher(data) {
@@ -18,5 +19,11 @@ function cipher(data) {
 function deCipher(data) {
     var decipher =crypto.createDecipher('aes192', key);
     return decipher.update(data, 'hex', 'utf8') + decipher.final('utf8');
+}
+
+function toMD5(content) {
+    var md5 = crypto.createHash('md5');
+    md5.update(content);
+    return md5.digest('hex');
 }
 module.exports=cryptoUtils;
